@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Montserrat', sans-serif; background-color: #111827; }
+        h1, h2, h3, h4, h5, h6 { font-family: 'Roboto', sans-serif; }
+        .brand-color { color: #c5a774; }
+        .brand-text-hover:hover { color: #c5a774; }
+        .prose { color: #d1d5db; }
+        .prose h1, .prose h2, .prose h3 { color: #fff; }
+        .prose a { color: #c5a774; }
+        .prose strong { color: #fff; }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-200">
+
+    <!-- ===== Header ===== -->
+    <header class="bg-gray-800 shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="<?= baseUrl ?>" class="text-3xl font-bold brand-color">Dra. Ana Paula Braga</a>
+            <nav><a href="<?= baseUrl ?>?page=blog" class="text-gray-300 brand-text-hover transition duration-300">Voltar ao Blog</a></nav>
+        </div>
+    </header>
+
+    <!-- ===== Conteúdo do Post ===== -->
+    <main class="py-20">
+        <div class="container mx-auto px-6 max-w-4xl">
+            <article class="prose lg:prose-xl mx-auto">
+                <h1>Desmistificando a Ansiedade: Sinais, Sintomas e Tratamentos</h1>
+                <p class="text-gray-400">Publicado em 05 de Julho de 2025</p>
+                <img class="rounded-lg shadow-xl my-8" src="https://images.unsplash.com/photo-1528642474498-1af0c17fd8c3?q=80&w=1974&auto=format&fit=crop" alt="Pessoa com expressão de ansiedade">
+                
+                <p>A ansiedade é uma reação natural do corpo ao estresse, uma sensação de medo ou apreensão sobre o que está por vir. No entanto, quando esses sentimentos se tornam excessivos, persistentes e interferem na vida diária, podemos estar falando de um transtorno de ansiedade.</p>
+                <p>É uma das condições de saúde mental mais comuns em todo o mundo, mas ainda é cercada de mitos e desinformação. Entender seus sinais é o primeiro passo para buscar ajuda e encontrar o tratamento adequado.</p>
+                <h2>Sinais Comuns de um Transtorno de Ansiedade</h2>
+                <p>Os sintomas podem variar de pessoa para pessoa, mas geralmente incluem:</p>
+                <ul>
+                    <li>Preocupação excessiva e incontrolável.</li>
+                    <li>Inquietação e sensação de estar "no limite".</li>
+                    <li>Fadiga e dificuldade de concentração.</li>
+                    <li>Tensão muscular e problemas para dormir.</li>
+                    <li>Sintomas físicos como palpitações, falta de ar e sudorese.</li>
+                </ul>
+                <p>Felizmente, existem tratamentos eficazes. A psicoterapia, especialmente a Terapia Cognitivo-Comportamental (TCC), ajuda os pacientes a identificar e mudar padrões de pensamento e comportamento negativos. Em alguns casos, a medicação também pode ser recomendada para ajudar a controlar os sintomas. Se você se identifica com esses sinais, não hesite em procurar um profissional de saúde mental. Cuidar da sua mente é essencial.</p>
+            </article>
+        </div>
+    </main>
+
+    <!-- ===== Footer ===== -->
+    <footer class="bg-black mt-20">
+        <div class="container mx-auto px-6 py-8 text-center text-gray-400">
+            &copy; 2025 Dra. Ana Paula Braga. Todos os direitos reservados.
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Montserrat', sans-serif; background-color: #111827; }
+        h1, h2, h3, h4, h5, h6 { font-family: 'Roboto', sans-serif; }
+        .brand-color { color: #c5a774; }
+        .brand-text-hover:hover { color: #c5a774; }
+        .prose { color: #d1d5db; }
+        .prose h1, .prose h2, .prose h3 { color: #fff; }
+        .prose a { color: #c5a774; }
+        .prose strong { color: #fff; }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-200">
+
+    <!-- ===== Header ===== -->
+    <header class="bg-gray-800 shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="<?= baseUrl ?>" class="text-3xl font-bold brand-color">Dra. Ana Paula Braga</a>
+            <nav><a href="<?= baseUrl ?>?page=blog" class="text-gray-300 brand-text-hover transition duration-300">Voltar ao Blog</a></nav>
+        </div>
+    </header>
+
+    <!-- ===== Conteúdo do Post ===== -->
+    <main class="py-20">
+        <div class="container mx-auto px-6 max-w-4xl">
+            <article class="prose lg:prose-xl mx-auto">
+                <h1>Terapia e Medicação: Uma Aliança Poderosa no Tratamento Psiquiátrico</h1>
+                <p class="text-gray-400">Publicado em 01 de Julho de 2025</p>
+                <img class="rounded-lg shadow-xl my-8" src="https://img.freepik.com/fotos-premium/frascos-e-ampolas-medicinais-para-injecao-medicamentos-e-tratamento-de-doencas-frascos-e-ampolas-azuis-e-vermelhos-farmacologia-e-ciencia-copie-o-espaco_283727-267.jpg?q=80&w=1974&auto=format&fit=crop" alt="Frascos de medicação e um cérebro estilizado">
+                
+                <p>No campo da psiquiatria, uma das dúvidas mais comuns dos pacientes é sobre a melhor abordagem de tratamento: psicoterapia, medicação ou uma combinação de ambas? A resposta, na grande maioria dos casos, aponta para uma aliança poderosa entre as duas.</p>
+                <p>A medicação, prescrita por um psiquiatra, atua em um nível neurobiológico. Ela pode ajudar a corrigir desequilíbrios químicos no cérebro que contribuem para os sintomas de transtornos como depressão, ansiedade e bipolaridade. Os medicamentos podem aliviar a intensidade dos sintomas, proporcionando ao paciente a estabilidade necessária para se engajar de forma mais eficaz na terapia.</p>
+                <h2>Como a Terapia Complementa a Medicação?</h2>
+                <p>A psicoterapia, por sua vez, trabalha os aspectos comportamentais, emocionais e cognitivos. Com a ajuda de um terapeuta, o paciente aprende a identificar gatilhos, desenvolver estratégias de enfrentamento (coping), modificar padrões de pensamento disfuncionais e aprofundar o autoconhecimento.</p>
+                <p>Pense na medicação como um "suporte químico" que abre a porta, e na terapia como o caminho que se percorre através dessa porta para construir uma mudança duradoura. Enquanto uma alivia o sofrimento agudo, a outra ensina as ferramentas para lidar com as causas subjacentes e prevenir futuras recaídas. Juntas, elas formam uma abordagem integral e humanizada, tratando a pessoa em sua totalidade.</p>
+            </article>
+        </div>
+    </main>
+
+    <!-- ===== Footer ===== -->
+    <footer class="bg-black mt-20">
+        <div class="container mx-auto px-6 py-8 text-center text-gray-400">
+            &copy; 2025 Dra. Ana Paula Braga. Todos os direitos reservados.
+        </div>
+    </footer>
+
+</body>
+</html>

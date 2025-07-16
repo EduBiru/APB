@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Montserrat', sans-serif; background-color: #111827; }
+        h1, h2, h3, h4, h5, h6 { font-family: 'Roboto', sans-serif; }
+        .brand-color { color: #c5a774; }
+        .brand-text-hover:hover { color: #c5a774; }
+        .prose { color: #d1d5db; }
+        .prose h1, .prose h2, .prose h3 { color: #fff; }
+        .prose a { color: #c5a774; }
+        .prose strong { color: #fff; }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-200">
+
+    <!-- ===== Header ===== -->
+    <header class="bg-gray-800 shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="<?= baseUrl ?>" class="text-3xl font-bold brand-color">Dra. Ana Paula Braga</a>
+            <nav><a href="<?= baseUrl ?>?page=blog" class="text-gray-300 brand-text-hover transition duration-300">Voltar ao Blog</a></nav>
+        </div>
+    </header>
+
+    <!-- ===== Conteúdo do Post ===== -->
+    <main class="py-20">
+        <div class="container mx-auto px-6 max-w-4xl">
+            <article class="prose lg:prose-xl mx-auto">
+                <h1>A Importância do Autocuidado na Jornada da Saúde Mental</h1>
+                <p class="text-gray-400">Publicado em 10 de Julho de 2025</p>
+                <img class="rounded-lg shadow-xl my-8" src="https://media.starlightcms.io/workspaces/pague-menos/portal-sempre-bem/optimized/istock-1301619674-lqk8vozoaf.jpeg?q=80&w=2070&auto=format&fit=crop" alt="Mulher meditando ao ar livre">
+                
+                <p>O autocuidado vai muito além de um dia no spa ou de uma máscara facial. É um conjunto de práticas diárias, intencionais e conscientes, essenciais para manter e promover o equilíbrio emocional, físico e psicológico. Na jornada da saúde mental, o autocuidado não é um luxo, mas uma ferramenta fundamental de tratamento e prevenção.</p>
+                <p>Incorporar pequenas mudanças na rotina pode fazer uma grande diferença. Isso pode incluir garantir uma boa noite de sono, manter uma alimentação balanceada, praticar exercícios físicos regularmente, ou simplesmente reservar um tempo para atividades que trazem prazer e relaxamento, como ler um livro, ouvir música ou passar tempo na natureza.</p>
+                <h2>Por que é tão difícil praticar o autocuidado?</h2>
+                <p>Muitas vezes, a pressão do dia a dia, as responsabilidades profissionais e familiares nos fazem colocar nossas próprias necessidades em último lugar. A cultura da produtividade constante pode nos levar a sentir culpa ao "desperdiçar" tempo conosco. No entanto, é crucial entender que cuidar de si mesmo é o que nos dá a energia e a resiliência necessárias para cuidar dos outros e de nossas obrigações.</p>
+                <p>Comece pequeno. Defina uma meta realista, como meditar por cinco minutos todas as manhãs ou fazer uma caminhada de 15 minutos na hora do almoço. O importante é a consistência. Ao transformar o autocuidado em um hábito, você fortalece sua saúde mental e constrói uma base sólida para enfrentar os desafios da vida com mais serenidade e força.</p>
+            </article>
+        </div>
+    </main>
+
+    <!-- ===== Footer ===== -->
+    <footer class="bg-black mt-20">
+        <div class="container mx-auto px-6 py-8 text-center text-gray-400">
+            &copy; 2025 Dra. Ana Paula Braga. Todos os direitos reservados.
+        </div>
+    </footer>
+
+</body>
+</html>

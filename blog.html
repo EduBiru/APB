@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+    <style>
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Montserrat', sans-serif; background-color: #111827; }
+        h1, h2, h3, h4, h5, h6 { font-family: 'Roboto', sans-serif; }
+        
+        .brand-color { color: #c5a774; }
+        .brand-bg { background-color: #c5a774; }
+        .brand-bg-hover:hover { background-color: #b39560; }
+        .brand-text-hover:hover { color: #c5a774; }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-200">
+
+    <!-- ===== Header ===== -->
+    <header class="bg-gray-800/80 backdrop-blur-sm shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="<?= baseUrl ?>" class="text-3xl font-bold brand-color">Dra. Ana Paula Braga</a>
+            <nav class="hidden md:flex space-x-8">
+                <a href="<?= baseUrl ?>" class="text-gray-300 brand-text-hover transition duration-300">Início</a>
+                <a href="<?= baseUrl ?>?page=blog" class="text-gray-300 brand-text-hover transition duration-300">Blog</a>
+                <a href="<?= baseUrl ?>#contato" class="text-gray-300 brand-text-hover transition duration-300">Contato</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ===== Conteúdo do Blog ===== -->
+    <main class="py-20">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h1 class="text-4xl md:text-5xl font-bold text-white">Blog</h1>
+                <p class="mt-2 text-lg text-gray-400">Artigos e reflexões sobre saúde mental, psiquiatria e bem-estar.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+                <!-- Coluna Principal de Artigos -->
+                <div class="lg:col-span-2 space-y-12">
+                    <!-- Artigo 1 -->
+                    <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden transform hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 group">
+                        <a href="<?= baseUrl ?>?page=post1" class="block">
+                            <div class="relative"><img class="h-64 w-full object-cover" src="https://img.freepik.com/fotos-gratis/mulher-concentrada-a-meditar-na-natureza_1098-1412.jpg?q=80&w=2070&auto=format&fit=crop" alt="Mulher meditando ao ar livre"><div class="absolute inset-0 bg-black bg-opacity-20 group-hover:bg-opacity-40 transition-all duration-300"></div></div>
+                            <div class="p-6">
+                                <p class="text-sm brand-color font-semibold mb-2">SAÚDE MENTAL</p>
+                                <h3 class="text-2xl font-bold text-white mb-2">A Importância do Autocuidado</h3>
+                                <p class="text-gray-400 mb-4">O autocuidado é um conjunto de práticas diárias essenciais para manter o equilíbrio emocional...</p>
+                                <span class="font-semibold brand-color hover:underline">Leia mais &rarr;</span>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Artigo 2 -->
+                    <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden transform hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 group">
+                        <a href="<?= baseUrl ?>?page=post2" class="block">
+                            <div class="relative"><img class="h-64 w-full object-cover" src="https://images.unsplash.com/photo-1528642474498-1af0c17fd8c3?q=80&w=1974&auto=format&fit=crop" alt="Pessoa com expressão de ansiedade"><div class="absolute inset-0 bg-black bg-opacity-20 group-hover:bg-opacity-40 transition-all duration-300"></div></div>
+                            <div class="p-6">
+                                <p class="text-sm brand-color font-semibold mb-2">ANSIEDADE</p>
+                                <h3 class="text-2xl font-bold text-white mb-2">Desmistificando a Ansiedade</h3>
+                                <p class="text-gray-400 mb-4">Entenda o que é o transtorno de ansiedade, como identificar os sinais e as abordagens de tratamento...</p>
+                                <span class="font-semibold brand-color hover:underline">Leia mais &rarr;</span>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Artigo 3 -->
+                    <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden transform hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 group">
+                        <a href="<?= baseUrl ?>?page=post3" class="block">
+                             <div class="relative"><img class="h-64 w-full object-cover" src="https://img.freepik.com/fotos-premium/frascos-e-ampolas-medicinais-para-injecao-medicamentos-e-tratamento-de-doencas-frascos-e-ampolas-azuis-e-vermelhos-farmacologia-e-ciencia-copie-o-espaco_283727-267.jpg?q=80&w=1974&auto=format&fit=crop" alt="Frascos de medicação e um cérebro estilizado"><div class="absolute inset-0 bg-black bg-opacity-20 group-hover:bg-opacity-40 transition-all duration-300"></div></div>
+                            <div class="p-6">
+                                <p class="text-sm brand-color font-semibold mb-2">TRATAMENTO</p>
+                                <h3 class="text-2xl font-bold text-white mb-2">Terapia e Medicação: Uma Aliança Poderosa</h3>
+                                <p class="text-gray-400 mb-4">Explicamos como a terapia e a medicação podem trabalhar juntas para promover uma recuperação...</p>
+                                <span class="font-semibold brand-color hover:underline">Leia mais &rarr;</span>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Paginação -->
+                    <div class="flex justify-center items-center space-x-2 mt-12">
+                        <a href="#" class="px-4 py-2 bg-gray-800 text-gray-400 rounded-md hover:bg-gray-700">&laquo; Anterior</a>
+                        <a href="#" class="px-4 py-2 bg-gray-700 text-white rounded-md">1</a>
+                        <a href="#" class="px-4 py-2 bg-gray-800 text-gray-400 rounded-md hover:bg-gray-700">2</a>
+                        <a href="#" class="px-4 py-2 bg-gray-800 text-gray-400 rounded-md hover:bg-gray-700">3</a>
+                        <a href="#" class="px-4 py-2 bg-gray-800 text-gray-400 rounded-md hover:bg-gray-700">Próximo &raquo;</a>
+                    </div>
+                </div>
+
+                <!-- Sidebar -->
+                <aside class="lg:col-span-1 space-y-8">
+                    <!-- Search Widget -->
+                    <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+                        <h3 class="text-xl font-bold text-white mb-4">Pesquisar</h3>
+                        <div class="flex">
+                            <input type="text" placeholder="Pesquisar artigos..." class="w-full px-4 py-2 bg-gray-700 text-white rounded-l-md focus:outline-none focus:ring-2 focus:ring-brand-color">
+                            <button class="brand-bg brand-bg-hover text-black px-4 py-2 rounded-r-md"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg></button>
+                        </div>
+                    </div>
+                    <!-- Categories Widget -->
+                    <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+                        <h3 class="text-xl font-bold text-white mb-4">Categorias</h3>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="text-gray-400 hover:brand-color transition-colors duration-200">&raquo; Saúde Mental</a></li>
+                            <li><a href="#" class="text-gray-400 hover:brand-color transition-colors duration-200">&raquo; Ansiedade</a></li>
+                            <li><a href="#" class="text-gray-400 hover:brand-color transition-colors duration-200">&raquo; Tratamento</a></li>
+                            <li><a href="#" class="text-gray-400 hover:brand-color transition-colors duration-200">&raquo; Bem-Estar</a></li>
+                        </ul>
+                    </div>
+                    <!-- Most Read Widget -->
+                    <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+                        <h3 class="text-xl font-bold text-white mb-4">Artigos Mais Lidos</h3>
+                        <ul class="space-y-4">
+                            <li class="flex items-center space-x-4"><a href="<?= baseUrl ?>?page=post1" class="flex items-center space-x-4 group"><img src="https://media.starlightcms.io/workspaces/pague-menos/portal-sempre-bem/optimized/istock-1301619674-lqk8vozoaf.jpeg?q=80&w=2070&auto=format&fit=crop" alt="Thumbnail" class="w-16 h-16 object-cover rounded-md"><span class="text-gray-300 group-hover:brand-color">A Importância do Autocuidado</span></a></li>
+                            <li class="flex items-center space-x-4"><a href="<?= baseUrl ?>?page=post2" class="flex items-center space-x-4 group"><img src="https://images.unsplash.com/photo-1528642474498-1af0c17fd8c3?q=80&w=1974&auto=format&fit=crop" alt="Thumbnail" class="w-16 h-16 object-cover rounded-md"><span class="text-gray-300 group-hover:brand-color">Desmistificando a Ansiedade</span></a></li>
+                        </ul>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </main>
+
+    <!-- ===== Footer ===== -->
+    <footer class="bg-black mt-20">
+        <div class="container mx-auto px-6 py-8 text-center text-gray-400">
+            &copy; 2025 Dra. Ana Paula Braga. Todos os direitos reservados.
+        </div>
+    </footer>
+
+</body>
+</html>
